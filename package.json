@@ -1,0 +1,24 @@
+{
+  "name": "byproxy",
+  "version": "0.1.0",
+  "description": "Simple solution to proxy objects on the server to the client ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pshihn/byproxy.git"
+  },
+  "keywords": [
+    "proxy",
+    "rest",
+    "express"
+  ],
+  "author": "Preet Shihn <preetshihn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pshihn/byproxy/issues"
+  },
+  "homepage": "https://github.com/pshihn/byproxy#readme"
+}
