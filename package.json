@@ -1,6 +1,6 @@
 {
   "name": "byproxy",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Simple solution to proxy objects on the server to the client ",
   "main": "index.js",
   "scripts": {
