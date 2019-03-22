@@ -1,5 +1,6 @@
 .cache
 .DS_Store
 node_modules
-bin
-dist
+lerna-debug.log
+npm-debug.log
+packages/*/lib

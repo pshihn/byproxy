@@ -8,8 +8,6 @@
       "dom"
     ],
     "declaration": true,
-    "outDir": "./bin",
-    "baseUrl": ".",
     "strict": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
@@ -20,7 +18,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": [
-    "src/**/*.ts"
+  "exclude": [
+    "node_modules"
   ]
 }

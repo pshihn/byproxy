@@ -2,35 +2,27 @@ import { terser } from "rollup-plugin-terser";
 
 export default [
   {
-    input: 'bin/serve.js',
+    input: 'lib/byproxy-link.js',
     output: {
-      file: 'dist/byproxy-serve.umd.js',
+      file: 'lib/byproxy-link.umd.js',
       format: 'umd',
       name: 'byproxy'
     },
     plugins: [terser()]
   },
   {
-    input: 'bin/serve.js',
+    input: 'lib/byproxy-link.js',
     output: {
-      file: 'dist/byproxy-serve.m.js',
-      format: 'esm'
-    },
-    plugins: [terser()]
-  },
-  {
-    input: 'bin/link.js',
-    output: {
-      file: 'dist/byproxy-link.js',
+      file: 'lib/byproxy-link.iife.js',
       format: 'iife',
       name: 'byproxy'
     },
     plugins: [terser()]
   },
   {
-    input: 'bin/link.js',
+    input: 'lib/byproxy-link.js',
     output: {
-      file: 'dist/byproxy-link.m.js',
+      file: 'lib/byproxy-link.m.js',
       format: 'esm'
     },
     plugins: [terser()]

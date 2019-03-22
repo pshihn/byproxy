@@ -1,6 +1,5 @@
 import { Application } from 'express'
-import { Message, MessageResponse } from './message';
-import { RestError } from './error';
+import { Message, MessageResponse, RestError } from 'byproxy-common';
 
 export function serve(app: Application, restPath: string, target: any): void {
   const reducePath = (list: PropertyKey[]) => list.reduce((o: any, prop) => (o ? Reflect.get(o, prop) : o), target);
