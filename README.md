@@ -72,7 +72,7 @@ npm install --save byproxy-link
 *Note: ByProxy is not a rest library. It integrates with Express on the server. There is no dependency required on the client.*
 
 ## Examples
-(https://github.com/pshihn/byproxy-demo)[ByProxy demo project] is a simple example.
+[ByProxy demo project](https://github.com/pshihn/byproxy-demo) is a simple example.
 
 ## License
 [MIT License](https://github.com/pshihn/byproxy/blob/master/LICENSE) (c) [Preet Shihn](https://twitter.com/preetster)
