@@ -1,3 +1,4 @@
+import resolve from 'rollup-plugin-node-resolve';
 import { terser } from "rollup-plugin-terser";
 
 export default [
@@ -8,7 +9,7 @@ export default [
       format: 'umd',
       name: 'byproxy'
     },
-    plugins: [terser()]
+    plugins: [resolve(), terser()]
   },
   {
     input: 'lib/byproxy-link.js',
@@ -17,7 +18,7 @@ export default [
       format: 'iife',
       name: 'byproxy'
     },
-    plugins: [terser()]
+    plugins: [resolve(), terser()]
   },
   {
     input: 'lib/byproxy-link.js',
@@ -25,6 +26,6 @@ export default [
       file: 'lib/byproxy-link.m.js',
       format: 'esm'
     },
-    plugins: [terser()]
+    plugins: [resolve(), terser()]
   }
 ];
