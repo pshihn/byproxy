@@ -1,7 +1,5 @@
 # ByProxy
 
-In web applications, developers often map a set of rest calls to methods on a server. These could be functions in a module or methods in an object. On the client, the code will usually make a rest call to a specific url matching the method on the server. 
-
 ByProxy allows the client to access the object/module on the server as if it was a local object with an API. 
 
 For example, a *calculator* server:
@@ -32,4 +30,32 @@ const calculator = byproxy.link('/calculator');
 const sum = await calculator.add(2, 6);       // 8
 const diff = await calculator.subtract(6, 2); // 4
 console.log(await calculator.opCount);        // 2
+```
+
+## Advantages
+* No need to configure different rest methods for each function call. It is handled automatically. 
+* When you want to add a new feature, just add a new method. Since the client is interacting with a *proxy* of the object on the server, no other setup is needed. 
+* If using types, both the server and client will have the same interfaces - avoids bugs and duplication of definitions. 
+
+## Other features
+
+#### Seamlessly deal with async functions
+Server: 
+```javascript
+byproxy.serve(app, '/updater', {
+  async delayedUpdate() {
+    return new Promise(........);
+  }
+}); 
+```
+Client:
+```javascript
+const result = await updater.delayedUpdate();
+```
+
+#### Proxy a whole module
+Server:
+```javascript
+const mymod = require('my-awesome-mod');
+byproxy.serve(app, '/updater', mymod);
 ```
