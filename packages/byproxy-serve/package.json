@@ -1,12 +1,14 @@
 {
-  "name": "byproxy",
-  "version": "0.0.3",
-  "description": "Simple solution to proxy objects on the server to the client ",
+  "name": "byproxy-serve",
+  "version": "0.0.4",
+  "description": "Simple solution to proxy objects on the server to the client",
+  "main": "lib/byproxy-serve.umd.js",
+  "module": "lib/byproxy-serve.js",
+  "types": "lib/byproxy-serve.d.ts",
   "scripts": {
-    "bootstrap": "npm install && npm run hoist",
-    "hoist": "lerna bootstrap --hoist",
-    "tsc": "lerna run tsc",
-    "build": "npm run tsc && lerna run build"
+    "build": "rollup -c",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -25,10 +27,11 @@
   "homepage": "https://github.com/pshihn/byproxy#readme",
   "devDependencies": {
     "@types/express": "^4.16.1",
+    "byproxy-common": "^0.0.3",
     "express": "^4.16.4",
-    "lerna": "^3.13.1",
-    "rollup": "^1.7.0",
-    "rollup-plugin-terser": "^4.0.4",
-    "typescript": "^3.3.4000"
+    "rollup": "^1.7.0"
+  },
+  "dependencies": {
+    "byproxy-common": "^0.0.4"
   }
 }

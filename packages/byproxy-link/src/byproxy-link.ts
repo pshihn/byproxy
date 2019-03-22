@@ -1,5 +1,4 @@
-import { Message, MessageResponse } from './message.js';
-import { RestError } from './error.js';
+import { Message, MessageResponse, RestError } from 'byproxy-common';
 
 type Remote = (message: Message) => Promise<any>;
 

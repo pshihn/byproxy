@@ -1,0 +1,37 @@
+{
+  "name": "byproxy-link",
+  "version": "0.0.4",
+  "description": "Simple solution to proxy objects on the server to the client",
+  "main": "lib/byproxy-link.umd.js",
+  "module": "lib/byproxy-link.m.js",
+  "browser": "lib/byproxy-link.iife.js",
+  "types": "lib/byproxy-link.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pshihn/byproxy.git"
+  },
+  "keywords": [
+    "proxy",
+    "rest",
+    "express"
+  ],
+  "author": "Preet Shihn <preetshihn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pshihn/byproxy/issues"
+  },
+  "homepage": "https://github.com/pshihn/byproxy#readme",
+  "devDependencies": {
+    "rollup": "^1.7.0",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-terser": "^4.0.4"
+  },
+  "dependencies": {
+    "byproxy-common": "^0.0.4"
+  }
+}
