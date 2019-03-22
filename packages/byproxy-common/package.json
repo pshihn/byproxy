@@ -2,11 +2,11 @@
   "name": "byproxy-common",
   "version": "0.0.2",
   "description": "Common byproxy code - shared by serve and link ",
-  "main": "lib/byproxy-common.js",
+  "main": "lib/byproxy-common.umd.js",
   "module": "lib/byproxy-common.js",
   "types": "lib/byproxy-common.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rollup -c",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/pshihn/byproxy/issues"
   },
-  "homepage": "https://github.com/pshihn/byproxy#readme"
+  "homepage": "https://github.com/pshihn/byproxy#readme",
+  "devDependencies": {
+    "rollup": "^1.7.0"
+  }
 }
