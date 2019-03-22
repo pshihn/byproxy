@@ -1,6 +1,6 @@
 # ByProxy
 
-ByProxy allows the client to access the object/module on the server as if it was a local object with an API. 
+ByProxy allows the client to access an object or module on the server as if it was a local object with an API. 
 
 For example, a *calculator* server:
 
