@@ -1,6 +1,6 @@
 {
   "name": "byproxy-common",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Common byproxy code - shared by serve and link ",
   "main": "lib/byproxy-common.js",
   "module": "lib/byproxy-common.js",

@@ -1,6 +1,6 @@
 {
   "name": "byproxy-link",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple solution to proxy objects on the server to the client",
   "main": "lib/byproxy-link.umd.js",
   "module": "lib/byproxy-link.m.js",
@@ -27,9 +27,9 @@
   },
   "homepage": "https://github.com/pshihn/byproxy#readme",
   "devDependencies": {
-    "byproxy-common": "^0.0.1",
+    "byproxy-common": "^0.0.2",
     "rollup": "^1.7.0",
-    "rollup-plugin-terser": "^4.0.4",
-    "rollup-plugin-node-resolve": "^4.0.1"
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-terser": "^4.0.4"
   }
 }
