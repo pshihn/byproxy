@@ -1,6 +1,6 @@
 {
   "name": "byproxy-link",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple solution to proxy objects on the server to the client",
   "main": "lib/byproxy-link.umd.js",
   "module": "lib/byproxy-link.m.js",
@@ -32,6 +32,6 @@
     "rollup-plugin-terser": "^4.0.4"
   },
   "dependencies": {
-    "byproxy-common": "^0.0.3"
+    "byproxy-common": "^0.0.4"
   }
 }
