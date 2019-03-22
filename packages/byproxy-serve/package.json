@@ -30,5 +30,8 @@
     "byproxy-common": "^0.0.3",
     "express": "^4.16.4",
     "rollup": "^1.7.0"
+  },
+  "dependencies": {
+    "byproxy-common": "^0.0.3"
   }
 }

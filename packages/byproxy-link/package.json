@@ -27,9 +27,11 @@
   },
   "homepage": "https://github.com/pshihn/byproxy#readme",
   "devDependencies": {
-    "byproxy-common": "^0.0.3",
     "rollup": "^1.7.0",
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-terser": "^4.0.4"
+  },
+  "dependencies": {
+    "byproxy-common": "^0.0.3"
   }
 }
