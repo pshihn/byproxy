@@ -1,6 +1,6 @@
 {
   "name": "byproxy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple solution to proxy objects on the server to the client ",
   "main": "dist/byproxy-serve.umd.js",
   "module": "dist/byproxy-link.m.js",
