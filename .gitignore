@@ -1,7 +1,5 @@
 .cache
 .DS_Store
-.vscode
 node_modules
 bin
 dist
-demo

@@ -2,7 +2,7 @@ import { Application } from 'express'
 import { Message, MessageResponse } from './message';
 import { RestError } from './error';
 
-export function expose(app: Application, restPath: string, target: any): void {
+export function serve(app: Application, restPath: string, target: any): void {
   const reducePath = (list: PropertyKey[]) => list.reduce((o: any, prop) => (o ? Reflect.get(o, prop) : o), target);
   app.post(restPath, async (req, res) => {
     const body = req.body;
