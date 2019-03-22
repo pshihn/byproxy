@@ -1,6 +1,6 @@
 # ByProxy
 
-ByProxy allows the client to access an object or module on the server as if it was a local object with an API. 
+ByProxy allows the client to access an object or module on the server as if it was a local object. The object's API can be invoked directly.
 
 For example, a *calculator* server:
 
@@ -70,3 +70,9 @@ npm install --save byproxy-link
 ```
 
 *Note: ByProxy is not a rest library. It integrates with Express on the server. There is no dependency required on the client.*
+
+## Examples
+(https://github.com/pshihn/byproxy-demo)[ByProxy demo project] is a simple example.
+
+## License
+[MIT License](https://github.com/pshihn/byproxy/blob/master/LICENSE) (c) [Preet Shihn](https://twitter.com/preetster)
