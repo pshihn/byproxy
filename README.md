@@ -54,8 +54,19 @@ const result = await updater.delayedUpdate();
 ```
 
 #### Proxy a whole module
-Server:
 ```javascript
 const mymod = require('my-awesome-mod');
 byproxy.serve(app, '/updater', mymod);
 ```
+
+## Setup
+
+ByProxy is composed of two modules `byproxy-serve` for the server and `byproxy-link` for the client. 
+They are both available on NPM.
+
+```
+npm install --save byproxy-serve
+npm install --save byproxy-link
+```
+
+*Note: ByProxy is not a rest library. It integrates with Express on the server. There is no dependency required on the client.*
