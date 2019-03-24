@@ -59,6 +59,21 @@ const mymod = require('my-awesome-mod');
 byproxy.serve(app, '/updater', mymod);
 ```
 
+## Error handling
+
+Since everything is a promise, the promise is rejected when the server returns and error code. The body of the response is in the error message and `error.code` will give you the status code of the rest call. 
+
+For most cases, when using `async-await`, simply catch the error
+
+```javascript
+const calculator = byproxy.link('/calculator');
+try {
+  const x = await calculator.divide(10, 0); // div by 0 error
+} catch (err) {
+  console.error(err);
+}
+```
+
 ## Setup
 
 ByProxy is composed of two modules `byproxy-serve` for the server and `byproxy-link` for the client. 
