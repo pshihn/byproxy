@@ -39,6 +39,25 @@ console.log(await calculator.opCount);        // 2
 
 ## Other features
 
+#### Proxy a whole module
+```javascript
+const mymod = require('my-awesome-mod');
+byproxy.serve(app, '/updater', mymod);
+```
+
+### Proxy just a function
+Server:
+```javascript
+byproxy.serve(app, '/hello', function (name) {
+  return 'Hello ' + name + '!';
+});
+```
+Client:
+```javascript
+const hello = byproxy.link('/hello');
+console.log(await hello('John'));     // Hello John!
+```
+
 #### Seamlessly deal with async functions
 Server: 
 ```javascript
@@ -53,11 +72,7 @@ Client:
 const result = await updater.delayedUpdate();
 ```
 
-#### Proxy a whole module
-```javascript
-const mymod = require('my-awesome-mod');
-byproxy.serve(app, '/updater', mymod);
-```
+
 
 ## Error handling
 
