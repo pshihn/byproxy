@@ -33,6 +33,7 @@ console.log(await calculator.opCount);        // 2
 ```
 
 ## Advantages
+* Tiny in size. The client lib is only 506 bytes gzipped.
 * No need to configure different rest methods for each function call. It is handled automatically. 
 * When you want to add a new feature, just add a new method. Since the client is interacting with a *proxy* of the object on the server, no other setup is needed. 
 * If using types, both the server and client will have the same interfaces - avoids bugs and duplication of definitions. 
