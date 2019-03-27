@@ -1,6 +1,6 @@
 {
   "name": "byproxy-serve",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Simple solution to proxy objects on the server to the client",
   "main": "lib/byproxy-serve.umd.js",
   "module": "lib/byproxy-serve.js",
@@ -32,6 +32,6 @@
     "rollup": "^1.7.0"
   },
   "dependencies": {
-    "byproxy-common": "^0.0.4"
+    "byproxy-common": "^0.1.0"
   }
 }

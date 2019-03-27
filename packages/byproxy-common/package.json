@@ -1,6 +1,6 @@
 {
   "name": "byproxy-common",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Common byproxy code - shared by serve and link ",
   "main": "lib/byproxy-common.umd.js",
   "module": "lib/byproxy-common.js",
